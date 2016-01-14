@@ -21,6 +21,7 @@ public class Spiral
       {
         //         Change the pen color of the line the tortoise draws the next color on the Color Wheel --#6
         //         Move the tortoise 5 times the current line number you are drawing --#5
+        Tortoise.move(i * 5);
         //         Turn the tortoise 1/3 of 360 degrees to the right --#2
         Tortoise.turn(120);
       }
