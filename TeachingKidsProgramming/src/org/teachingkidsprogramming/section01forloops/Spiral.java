@@ -16,7 +16,9 @@ public class Spiral
     //    Add Blue Violet to the Color Wheel --#7
     ColorWheel.addColor(PenColors.Purples.BlueViolet);
     //    Add Violet to the Color Wheel --#8
+    ColorWheel.addColor(PenColors.Purples.Violet);
     //    Add Purple to the Color Wheel --#9
+    ColorWheel.addColor(PenColors.Purples.Purple);
     //    Do the following 75 times --#3.1
     for (int i = 0; i < 75; i++)
     {
