@@ -10,6 +10,7 @@ public class Spiral
     //    Show the tortoise --#1
     Tortoise.show();
     //    Make the tortoise go as fast as possible --#4
+    Tortoise.setSpeed(5);
     //    Add Blue Violet to the Color Wheel --#7
     //    Add Violet to the Color Wheel --#8
     //    Add Purple to the Color Wheel --#9
