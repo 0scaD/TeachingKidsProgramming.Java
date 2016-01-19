@@ -14,7 +14,7 @@ public class DoubleLoop
     //    Set the tortoise y position to 150 --#1.2
     Tortoise.setY(150);
     //    UPDATE the tortoise speed to 10 --#8.2
-    Tortoise.setSpeed(5);
+    Tortoise.setSpeed(10);
     //  
     ColorWheel.addColor(PenColors.Reds.Crimson);
     ColorWheel.addColor(PenColors.Reds.DarkRed);
@@ -30,10 +30,16 @@ public class DoubleLoop
       Tortoise.turn(360 / 6);
       // 
       //         Do the following 15 times --(HINT: The new line number is j) --#7.1
-      //              Set the pen width of the line the tortoise draws to 17 --#9
-      //              Move the tortoise 8 times the current line number you are drawing --#8.1
-      //              Turn the tortoise 1/5 of 360 degrees to the right --#6
-      //         Repeat --#7.2 
+      for (int j = 0; j < 16; j++)
+      {
+        //              Set the pen width of the line the tortoise draws to 17 --#9
+        Tortoise.setPenWidth(17);
+        //              Move the tortoise 8 times the current line number you are drawing --#8.1
+        Tortoise.move(8 * j);
+        //              Turn the tortoise 1/5 of 360 degrees to the right --#6
+        Tortoise.turn(360 / 5);
+        //         Repeat --#7.2 
+      }
       //  
       //    Hide the Tortoise --#10
       Tortoise.getBackgroundWindow().setBackground(PenColors.Yellows.PeachPuff);
