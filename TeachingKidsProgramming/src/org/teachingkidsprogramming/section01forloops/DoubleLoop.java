@@ -20,20 +20,25 @@ public class DoubleLoop
     ColorWheel.addColor(PenColors.Reds.DarkRed);
     ColorWheel.addColor(PenColors.Reds.FireBrick);
     //    Do the following 6 times --#3.1
-    //         Change the pen color of the line the tortoise draws to the next color on the Color Wheel --#5
-    //         Move the tortoise 4 times the current line number you are drawing --#4
-    //         Turn the tortoise 1/6 of 360 degrees to the left --#2
-    Tortoise.turn(360 / 6);
-    // 
-    //         Do the following 15 times --(HINT: The new line number is j) --#7.1
-    //              Set the pen width of the line the tortoise draws to 17 --#9
-    //              Move the tortoise 8 times the current line number you are drawing --#8.1
-    //              Turn the tortoise 1/5 of 360 degrees to the right --#6
-    //         Repeat --#7.2 
-    //  
-    //    Hide the Tortoise --#10
-    Tortoise.getBackgroundWindow().setBackground(PenColors.Yellows.PeachPuff);
-    //    Repeat --#3.2
+    for (int i = 0; i < 7; i++)
+    {
+      //         Change the pen color of the line the tortoise draws to the next color on the Color Wheel --#5
+      Tortoise.setPenColor(ColorWheel.getNextColor());
+      //         Move the tortoise 4 times the current line number you are drawing --#4
+      Tortoise.move(4 * i);
+      //         Turn the tortoise 1/6 of 360 degrees to the left --#2
+      Tortoise.turn(360 / 6);
+      // 
+      //         Do the following 15 times --(HINT: The new line number is j) --#7.1
+      //              Set the pen width of the line the tortoise draws to 17 --#9
+      //              Move the tortoise 8 times the current line number you are drawing --#8.1
+      //              Turn the tortoise 1/5 of 360 degrees to the right --#6
+      //         Repeat --#7.2 
+      //  
+      //    Hide the Tortoise --#10
+      Tortoise.getBackgroundWindow().setBackground(PenColors.Yellows.PeachPuff);
+      //    Repeat --#3.2
+    }
     //    Set the tortoise x position to 300 --#15.1
     //    Set the tortoise y position to 200 --#15.2
     //    Do the following 5 times --#12.1
