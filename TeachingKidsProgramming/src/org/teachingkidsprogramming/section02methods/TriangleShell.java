@@ -19,12 +19,13 @@ public class TriangleShell
       //      Change the pen color of the line the tortoise draws to a random color --#9
       Tortoise.setPenColor(PenColors.getRandomColor());
       //      Increase the current length of the side by 4 pixels --#8
-      Tortoise.setPenWidth(4);
+      length = length + 4;
       //      drawTriangle (recipe below) --#5.1
       //
       drawTriangle();
       //
       //      Turn the tortoise 1/60th of 360 degrees to the right --#10
+      Tortoise.turn(360 / 60);
       // Repeat --#7.2
     }
   }
