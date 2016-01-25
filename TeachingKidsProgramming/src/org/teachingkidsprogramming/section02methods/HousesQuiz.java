@@ -20,19 +20,18 @@ public class HousesQuiz extends HousesQuizAdapter
     //   Question3
     //   large (recipe below) 
     large();
-    //
-    //   Question4
-    //   moveTheLength (recipe below) 
-    moveTheLength(length);
-    //
-    //   Question5
-    //   turnTheCorner (recipe below) 
-    turnTheCorner();
+    drawASide();
     //
     //   Question6
     //   drawASide (recipe below) 
+    drawASide();
+  }
+  private void drawASide()
+  {
     //   ------------- Recipe for drawASide 
     //      call moveTheLength and turnTheCorner
+    moveTheLength();
+    turnTheCorner();
     //   ------------- End of drawASide recipe
   }
   private void turnTheCorner()
@@ -42,11 +41,11 @@ public class HousesQuiz extends HousesQuizAdapter
     Tortoise.turn(-360 / 3);
     //   ------------- End of turnTheCorner recipe
   }
-  private void moveTheLength(int currentlength)
+  private void moveTheLength()
   {
     //   ------------- Recipe for moveTheLength 
     //      move the Tortoise the current length\
-    Tortoise.move(currentlength);
+    Tortoise.move(length);
     //   ------------- End of moveTheLength recipe
   }
   private void large()
