@@ -1,5 +1,6 @@
 package org.teachingkidsprogramming.section02methods;
 
+import org.teachingextensions.logo.Tortoise;
 import org.teachingkidsprogramming.recipes.quizzes.graders.HousesQuizAdapter;
 import org.teachingkidsprogramming.recipes.quizzes.graders.HousesQuizGrader;
 
@@ -22,21 +23,31 @@ public class HousesQuiz extends HousesQuizAdapter
     //
     //   Question4
     //   moveTheLength (recipe below) 
-    //   ------------- Recipe for moveTheLength 
-    //      move the Tortoise the current length
-    //   ------------- End of moveTheLength recipe
+    moveTheLength(length);
     //
     //   Question5
     //   turnTheCorner (recipe below) 
-    //   ------------- Recipe for turnTheCorner 
-    //      turn the Tortoise 1/3 of 360 degrees to the left
-    //   ------------- End of turnTheCorner recipe
+    turnTheCorner();
     //
     //   Question6
     //   drawASide (recipe below) 
     //   ------------- Recipe for drawASide 
     //      call moveTheLength and turnTheCorner
     //   ------------- End of drawASide recipe
+  }
+  private void turnTheCorner()
+  {
+    //   ------------- Recipe for turnTheCorner 
+    //      turn the Tortoise 1/3 of 360 degrees to the left
+    Tortoise.turn(-360 / 3);
+    //   ------------- End of turnTheCorner recipe
+  }
+  private void moveTheLength(int currentlength)
+  {
+    //   ------------- Recipe for moveTheLength 
+    //      move the Tortoise the current length\
+    Tortoise.move(currentlength);
+    //   ------------- End of moveTheLength recipe
   }
   private void large()
   {
