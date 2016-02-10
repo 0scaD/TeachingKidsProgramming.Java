@@ -12,12 +12,20 @@ public class TurtleTree
   {
     Tortoise.show();
     //    Make the tortoise go as fast as possible --#10
+    Tortoise.setSpeed(10);
     //    Turn the background black  --#21
     //    The current branch length = 60 --#1.2
+    int length = 60;
     //    drawBranch(recipe below) --#2.1
     //
+    drawBranch(length);
+  }
+  private static void drawBranch(int length)
+  {
     //    ------------- Recipe for drawBranch --#2.2
     //        If the current branch length is greater than zero, do the rest of this recipe --#5
+    if (length > 0)
+    {
     //        adjustColor (recipe below)--#15.1
     //        ------------- Recipe for adjustColor --#15.2
     HashMap<Integer, Color> colors = new HashMap<Integer, Color>();
@@ -31,23 +39,37 @@ public class TurtleTree
     //        ------------- End of adjustColor --#15.3
     //
     //        Move the tortoise the length of the current branch --#1.1
-    //        drawLowerBranches (recipe below) --#6.1
+    Tortoise.move(length);
+    //        draw LowerBranches (recipe below) --#6.1
     //
+    drawLowerBranches();
+    //
+    }
+    //    ------------- End of drawBranch recipe --#2.3
+  }
+  private static void drawLowerBranches()
+  {
     //        ------------- Recipe for drawLowerBranches --#6.2
     //            Turn the Tortoise 30 degrees to the right --#3
-    //            drawShorterBranch (recipe below) --#8.1
-    //
-    //            ------------- Recipe for drawShorterBranch --#8.2
-    //                drawBranch (10 pixels shorter) --#4
-    //            ------------- End of drawShorterBranch recipe --#8.3
+    Tortoise.turn(30);
+    drawShorterBranch();
     //
     //            Turn the Tortoise 60 degrees to the left --#7
+    Tortoise.turn(-60);
     //            drawShorterBranch --#9
+    drawShorterBranch();
     //            Turn the Tortoise 30 degrees to the right --#12
     //            adjustColor --#16
     //            Move the tortoise backward the length of the current branch --#11
     //        ------------- End of drawLowerBranches recipe --#6.3
+  }
+  private static void drawShorterBranch()
+  {
+    //            drawShorterBranch (recipe below) --#8.1
     //
-    //    ------------- End of drawBranch recipe --#2.3
+    //            ------------- Recipe for drawShorterBranch --#8.2
+    //                drawBranch (10 pixels shorter) --#4
+    int drawBranch = 50;
+    //            ------------- End of drawShorterBranch recipe --#8.3
   }
 }
