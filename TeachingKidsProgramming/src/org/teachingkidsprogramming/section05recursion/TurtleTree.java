@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.util.HashMap;
 
 import org.teachingextensions.logo.Tortoise;
+import org.teachingextensions.logo.utils.ColorUtils.PenColors.Browns;
 
 public class TurtleTree
 {
@@ -35,7 +36,8 @@ public class TurtleTree
       //            A 30 pixel long branch is dark green --#18
       //            A 40 pixel long branch is olive --#17
       //            A 50 pixel long branch is sienna --#14
-      //            A 60 pixel long branch is saddle brown (TIP: Put the values into the 'colors' HashMap)--#13 
+      //            A 60 pixel long branch is saddle brown (TIP: Put the values into the 'colors' HashMap)--#1
+      HashMap<60, >
       //            Get the value of the branch length from the 'colors' HashMap and use that to set the pen color --#21
       //        ------------- End of adjustColor --#15.3
       //
