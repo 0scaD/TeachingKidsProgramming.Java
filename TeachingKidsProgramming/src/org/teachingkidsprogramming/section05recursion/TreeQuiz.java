@@ -11,12 +11,14 @@ public class TreeQuiz extends TreeQuizAdapter
     //   doubleLength (recipe below) 
     //   ------------- Recipe for doubleLength 
     //       make the current length twice what it is
+    int length = length * 2;
     //   ------------- End of doubleLength recipe
     //
     //   Question 2 
     //   decreaseTurn (recipe below) 
     //   ------------- Recipe for decreaseTurn 
-    //      decrease the current turn by 1
+    //  decrease the current turn by 1
+    int turn = turn - 1;
     //   ------------- End of decreaseTurn recipe
     //
     //   Question 3 

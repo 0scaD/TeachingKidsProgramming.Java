@@ -11,6 +11,7 @@ public class TurtleTree
     //    Make the tortoise go as fast as possible --#10
     //    Turn the background black  --#21
 <<<<<<< HEAD
+<<<<<<< HEAD
     //    The current branch length = 60 --#1.2 
     int length = 60;
     //    drawBranch(recipe below) --#2.1
@@ -22,6 +23,10 @@ public class TurtleTree
 =======
     //    The current branch length = 60 --#1.2
     //    drawBranch(recipe below) --#2.1
+=======
+    //    The current branch length = 60 --#1.2
+    //    drawBranch(recipe below) --#2.1
+>>>>>>> parent of 974ec62... Fixes
     //
     //    ------------- Recipe for drawBranch --#2.2
     //        If the current branch length is greater than zero, do the rest of this recipe --#5
@@ -43,6 +48,13 @@ public class TurtleTree
     //        ------------- Recipe for drawLowerBranches --#6.2
     //            Turn the Tortoise 30 degrees to the right --#3
     //            drawShorterBranch (recipe below) --#8.1
+<<<<<<< HEAD
+=======
+    //
+    //            ------------- Recipe for drawShorterBranch --#8.2
+    //                drawBranch (10 pixels shorter) --#4
+    //            ------------- End of drawShorterBranch recipe --#8.3
+>>>>>>> parent of 974ec62... Fixes
     //
     //            ------------- Recipe for drawShorterBranch --#8.2
     //                drawBranch (10 pixels shorter) --#4
@@ -55,6 +67,7 @@ public class TurtleTree
     //            adjustColor --#16
     //            Move the tortoise backward the length of the current branch --#11
     //        ------------- End of drawLowerBranches recipe --#6.3
+<<<<<<< HEAD
 <<<<<<< HEAD
     //            ------------- Recipe for drawShorterBranch --#8.2
     //                drawBranch (10 pixels shorter) --#4
@@ -87,6 +100,8 @@ public class TurtleTree
     Tortoise.move(length);
     //        draw LowerBranches (recipe below) --#6.1
     //
+=======
+>>>>>>> parent of 974ec62... Fixes
     //
     //    ------------- End of drawBranch recipe --#2.3
   }
